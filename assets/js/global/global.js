@@ -1,0 +1,4 @@
+
+/* Importação Global */
+
+import './menu';
