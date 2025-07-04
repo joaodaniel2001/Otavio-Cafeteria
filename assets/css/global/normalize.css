@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +6,139 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .5s linear;    
+    transition: .5s linear;
+    z-index: 0;  
 }
+
+main {
+    background-color: #f1f1f1;
+}
+
+html {
+  height: 1000vh;
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 6.5vh 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    display: inline-block;
+    text-align: center;
+    z-index: 999;
+  }
+  
+  header.rolagem {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px #000;
+  }
+  
+  .cont-Header {
+    max-width: 1280px;
+    margin: auto;
+  }
+  
+  /* Logo */
+  
+  .logo {
+    color: #000;
+  }
+  
+  header.rolagem .logo {
+    color: #000;
+  }
+  
+  /* Opções */
+  
+  header ul {
+    list-style-type: none;
+  }
+  
+  header ul li {
+    display: inline-block;
+    margin: 0 2.1vw;
+  }
+  
+  header ul li a {
+    color: #000     ;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  header.rolagem ul {
+    list-style-type: none;
+  }
+  
+  header.rolagem ul li {
+    display: inline-block;
+    margin: 0 2.1vw;
+  }
+  
+  header.rolagem ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  header.rolagem ul li a:hover {
+    text-decoration: none;
+    text-decoration: underline;
+  }
+  
+  /* Registrar */
+  
+  .login-registrar {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .login-registrar a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+  }
+  
+  header.rolagem .login-registrar a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+  }
+  
+  .login-registrar a:hover {
+    text-decoration: underline;
+  }
+  
+  header button {
+    color: #742525;
+    border-radius: 20px;
+    border: 5px solid #742525;
+    background-color: transparent;
+    padding: 0 3em;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header button:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  }
