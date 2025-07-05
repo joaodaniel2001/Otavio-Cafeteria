@@ -10,38 +10,47 @@ html {
   background-size: cover;
   height: 100vh;
   text-align: center;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .conteudo-banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  align-items: start;
+  height: 50%;
+  padding: 0 6.5vw;
 }
 
 #banner h1 {
+  margin-top: 30vh;
   color: #fff;
-  font-family: "Tourney", sans-serif;
-  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 120px;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-#banner h2 {
-  font-family: "Courier New", Courier, monospace;
+#banner p {
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 300;
   color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-align: left;
+  line-height: 1.5;
+  max-width: 700px;
+}
+#banner a {
+  transition: .4s;
 }
 
 #banner.rolagem h1 {
-    opacity: 0;
+  opacity: 0;
 }
 
-#banner.rolagem h2 {
-    opacity: 0;
+#banner.rolagem p {
+  opacity: 0;
+}
+
+#banner.rolagem a {
+  opacity: 0;
 }
