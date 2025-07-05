@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registrar </title>
+    <link rel="stylesheet" href="./assets/css/pages/index/index.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <main>
+        <div class="cont-Login center">
+            <div class="box-login shadow">
+                <h1> Registre-se </h1>
+                <form id="loginForm">
+                    <div class="input-box">
+                        <input placeholder="Nome de usuário" type="text" name="nome" id="usuario" required>
+                        <i class="bi bi-person "></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input placeholder="Senha" minlength="8" type="password" id="password" required>
+                        <i class="bi bi-lock"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="date" id="date" required><br>
+                        <i class="bi bi-calendar"></i>
+                    </div>
+                    <div class="input-box">
+                        <input placeholder="E-mail" type="email" id="email" required><br>
+                        <i class="bi bi-envelope-at"></i>
+                    </div>
+                    <div>
+                        <label class="pt-3 pb-3">
+                            <input type="checkbox">
+                            Lembrar minha senha<br>
+                        </label>
+                    </div>
+
+                    <div ctonlass="input-box">
+                        <a href="home.html" class="btn btn-secondary" id="btnSubmit">Cadastrar-se</a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="./assets/js/pages/index/index.js"></script>
+
+</body>
+
+</html>

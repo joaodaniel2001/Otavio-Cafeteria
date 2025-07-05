@@ -1,0 +1,47 @@
+@import "../../global/global.css";
+
+html {
+  height: 1000vh;
+}
+
+#banner {
+  background-image: url("/assets/img/pages/home/home-img.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  transition: .4s;
+}
+
+.conteudo-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#banner h1 {
+  color: #fff;
+  font-family: "Tourney", sans-serif;
+  font-size: 100px;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#banner h2 {
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#banner.rolagem h1 {
+    opacity: 0;
+}
+
+#banner.rolagem h2 {
+    opacity: 0;
+}
