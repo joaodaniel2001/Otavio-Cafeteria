@@ -24,9 +24,11 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
                     <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="#noticias"> Noticias </a></li>
+                    <li><a href="#">Avaliações</a></li>
+                    <li><a href="#">Endereço</a></li>
+                    <li><a href="cardapio.html">Menu</a></li>
                 </ul>
             </nav>
 
@@ -42,7 +44,8 @@
         <div class="container-fluid">
             <div class="conteudo-banner">
                 <h1> Cafeteria </h1>
-                <p>A cafeteria oferece uma experiência única com uma atmosfera vibrante e cafés intensos, feitos com
+                <p>A cafeteria Tempero do Davi oferece uma experiência única com uma atmosfera vibrante e cafés
+                    intensos, feitos com
                     ingredientes selecionados. Cada bebida é preparada com paixão, garantindo momentos inesquecíveis.
                     Venha descobrir o sabor da nossa cafeteria!
                 </p>
@@ -57,7 +60,48 @@
 
         </div>
     </section>
+
     <main>
+        <!-- CafeBresa -->
+        <div class="cont-01 d-flex justify-content-center ">
+            <img id="img-Davi" class="shadow-lg rounded m-5 border border-light" alt="Davi_Imagens"
+                src="./assets/img/pages/home/davi-img04.jpg">
+            <div>
+                <h1> Cafebresa </h1>
+                <p class="mt-4">Com sabor intenso e personalidade marcante, a Calabresa oferece uma experiência vibrante
+                    do início ao
+                    fim. Seu toque defumado e levemente picante atin ge nível 10 de sabor, ideal para quem busca
+                    intensidade e caráter. Disponível em embalagens com 10 ou 20 unidades.
+                </p>
+                <a class="btn btn-outline-warning rounded-0 px-5 mt-4" href="cardapio.html"> Conheça </a>
+            </div>
+        </div>
+
+        <!-- Avaliações -->
+        <section id="noticias" class="m-4">
+
+            <div class="row d-flex">
+                <h3 class="m-5"> Últimas noticias: </h3>
+            </div>
+            <div class="flex-home">
+                <div class="boxDoCalabreso textoFino">
+                    <img class="fazerCaber" src="./assets/img/pages/home/daviDoente.png" alt="DaviDoente">
+                    <a href="#" class="btn btn-danger"> DESCUBRA </a>
+                </div>
+                <div class="boxDoCalabreso textoFino">
+                    <img class="fazerCaber" src="./assets/img/pages/home/davizinho.jpeg" alt="DaviDoente">
+                    <a href="#" class="btn btn-danger"> DESCUBRA </a>
+                </div>
+                <div class="boxDoCalabreso textoFino">
+                    <img class="fazerCaber" src="./assets/img/pages/home/daviChorando.jpg" alt="DaviDoente">
+                    <a href="#" class="btn btn-danger"> DESCUBRA </a>
+                </div>
+                <div class="boxDoCalabreso textoFino">
+                    <img class="fazerCaber" src="./assets/img/pages/home/daviEstudando.png" alt="DaviDoente">
+                    <a href="#" class="btn btn-danger"> DESCUBRA </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script type="module" src="./assets/js/pages/home/home.js"></script>

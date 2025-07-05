@@ -39,16 +39,9 @@ header {
   width: 100%;
   padding: 20px 10vw;
   position: fixed;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-  display: inline-block;
-  text-align: center;
-  z-index: 999;
-  text-align: center;
-  text-decoration: none;
-  position: fixed;
-  box-sizing: border-box;
+  top: -100px;
+  transition: top 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
 }
 
 header.rolagem {
@@ -92,7 +85,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-text-decoration: underline 3px;
+  text-decoration: underline 3px;
 }
 
 header.rolagem ul li a {
@@ -106,5 +99,5 @@ header i {
   margin-left: 1em;
   font-size: 30px;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.5s;
 }
