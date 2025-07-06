@@ -26,6 +26,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -39,7 +44,7 @@ header {
   width: 100%;
   padding: 20px 10vw;
   position: fixed;
-  top: -100px;
+  top: 0;
   transition: top 0.3s ease, background-color 0.3s ease;
   z-index: 1000;
 }
@@ -63,10 +68,6 @@ header.rolagem {
   box-sizing: border-box;
 }
 
-header.rolagem .logo img {
-  max-width: 100px;
-}
-
 /* Opções */
 
 header ul {
@@ -80,7 +81,7 @@ header ul li {
 
 header ul li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--black);
   font-size: 15px;
 }
 
@@ -89,15 +90,20 @@ header ul li a:hover {
 }
 
 header.rolagem ul li a {
+  color: #fff;
   font-size: 15px;
 }
 
 /* Pesquisa e Carrinho */
 
 header i {
-  color: #fff;
+  color: var(--black);
   margin-left: 1em;
   font-size: 30px;
   cursor: pointer;
   transition: 0.5s;
+}
+
+header.rolagem i {
+  color: #fff;
 }
