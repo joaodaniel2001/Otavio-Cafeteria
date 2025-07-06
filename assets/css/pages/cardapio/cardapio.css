@@ -1,2 +1,256 @@
+@import "../../global/global.css";
 
-@import '../../global/global.css'
+html {
+  height: auto;
+}
+
+.sombra {
+  box-shadow: 0 0 15px 10px #fff;
+}
+
+.cor {
+  background-color: var(--black);
+}
+
+/* Banner */
+
+#banner {
+  background-image: url("/assets/img/pages/cardapio/logo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+  text-align: center;
+  transition: 0.4s;
+}
+
+/* MAIN */
+
+/* Filtro */
+
+#container-Filtro {
+  background-color: #fff;
+  height: 20vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.fil-Esquerdo {
+  padding: 30px;
+  box-sizing: border-box;
+  width: 20%;
+  height: 80%;
+}
+
+.fil-Esquerdo p {
+  color: #742525;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-decoration: underline 4px;
+}
+
+.fil-Direito {
+  padding: 5vh 4vw;
+  box-sizing: border-box;
+  width: 35%;
+  height: 80%;
+}
+
+.fil-Direito a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.fil-Direito a:hover {
+  font-size: 27px;
+  color: #742525;
+  text-decoration: underline #742525;
+}
+
+/* Produtos */
+
+#cafe {
+  width: 100%;
+  height: 70vh;
+  padding: 3vh 5vw;
+  box-sizing: border-box;
+}
+
+#calabresa {
+  width: 100%;
+  height: 70vh;
+  padding: 3vh 5vw;
+  box-sizing: border-box;
+}
+
+.box-Produto {
+  background-color: #fff;
+  width: 20%;
+  height: 90%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #000;
+  transition: 0.5s;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+.box-Produto:hover {
+  transform: scale(1.2);
+}
+
+.box-Produto h1 {
+  color: #606060;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.box-Produto h2 {
+  margin-top: 10px;
+  color: #606060;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.box-Produto h3 {
+  margin-top: 10px;
+  color: #606060a2;
+  font-size: 25px;
+  font-weight: 100;
+  text-decoration: line-through;
+}
+
+.box-Produto h4 {
+  margin-top: 10px;
+  color: #606060;
+  font-size: 30px;
+  font-weight: 100;
+  text-shadow: 0 3px 1px #b1b1b1;
+}
+
+.box-Produto button {
+  margin-top: 12px;
+  color: #fff;
+  background-color: #ae5868;
+  width: 70%;
+  height: 5vh;
+  transition: 0.5s;
+  border-radius: 20px;
+  border: none;
+}
+
+.box-Produto button:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.prod-Promocao {
+  background-color: #a03a4d;
+  color: #fff;
+  width: 30%;
+  height: 10%;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  box-shadow: 0 0 5px #000;
+}
+
+.prod-IMG {
+  width: 100%;
+  height: 50%;
+}
+
+.prod-Carrinho {
+  background-color: #742525;
+  width: 40%;
+  height: 30%;
+}
+
+/* Local */
+
+#local {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-Local {
+  align-items: flex-start;
+  background-color: #fff;
+  display: flex;
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  padding: 6vh;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.container-Local h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+
+.container-Local p {
+  font-family: "Lora", serif;
+  font-size: 30px;
+  color: #000000e3;
+}
+
+.container-Local button {
+  background-color: #707070;
+  color: #fff;
+  width: 15vw;
+  height: 7vh;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.container-Local button:hover {
+  background-color: #000;
+}
+
+.container-Local img {
+  background-color: rgb(116, 37, 37);
+  width: 25%;
+  height: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* IMG final */
+
+.propaganda {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.propaganda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f1f1f1;
+  padding-bottom: 3vh;
+  padding-top: 20vh;
+}
+
+footer a {
+  color: #212529;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

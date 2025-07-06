@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre Nós</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="./assets/css/pages/cardapio/cardapio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -13,25 +16,250 @@
     <header id="header">
         <div class="flex">
             <div class="logo">
-
+                <a href="#"><img id="logo-img" src="./assets/img/global/logoPreta.png" alt="Logo"></a>
             </div>
-
             <nav>
                 <ul>
-                    <li><a href="#"></a> Home </li>
-                    <li><a href="#"></a> Sobre Nós </li>
-                    <li><a href="#"></a> Cardápio </li>
+                    <li><a href="home.html">Home</a></li>
                 </ul>
             </nav>
-
-            <div class="login-registrar">
-                 
+            <div class="pesq-carrinho">
+                <i id="lupa" class="bi bi-instagram"></i>
+                <i class="bi bi-cart" id="carrinho" onmouseover="mouseOver()" onmouseout="mouseOut()"></i>
             </div>
-            
         </div>
     </header>
 
-    <script src="./assets/js/global/global.js"></script>
+    <section id="banner"></section>
+
+    <main>
+
+        <section class="center" id="container-Filtro">
+            <div class="fil-Esquerdo center">
+                <p>Filtrar por:</p>
+            </div>
+            <div class="fil-Direito flex">
+                <a href="#cafe">CAFÉ</a>
+                <a href="#calabresa">CALABRESA</a>
+                <a href="#local">LOCAL</a>
+            </div>
+        </section>
+
+        <section class="container py-5" id="cafe">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow position-relative">
+                        <div class="badge bg-danger position-absolute" style="top:10px;left:10px">20%</div>
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/017/394/931/small_2x/cup-of-hot-cappuccino-coffee-illustration-generative-ai-png.png"
+                            class="card-img-top img-fluid p-3" alt="Cappubresa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cappubresa</h5>
+                            <h6 class="text-danger fw-bold">20% OFF</h6>
+                            <p><del>R$ 349,55</del><span class="ms-2">R$ 349,50</span></p>
+                            <a href="erro.html" class="btn btn-dark rounded-pill px-4">Adicione ao Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow position-relative">
+                        <div class="badge bg-danger position-absolute" style="top:10px;left:10px">10%</div>
+                        <img src="https://www.starbucksathome.com/pt/sites/default/files/2025-04/Recipe%20Refresh_Cappuccino_1842x1542_LS.png"
+                            class="card-img-top img-fluid p-3" alt="Calma, café expresso!">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Calma, café expresso!</h5>
+                            <h6 class="text-danger fw-bold">10% OFF</h6>
+                            <p><del>R$ 248,98</del><span class="ms-2">R$ 258,59</span></p>
+                            <a href="erro.html" class="btn btn-dark rounded-pill px-4">Adicione ao Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow position-relative">
+                        <div class="badge bg-danger position-absolute" style="top:10px;left:10px">50%</div>
+                        <img src="https://croasonho.com.br/wp-content/uploads/2024/06/milk_nutella_com_nozes.png"
+                            class="card-img-top img-fluid p-3" alt="Milkshake de guê?">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Milkshake de guê?</h5>
+                            <h6 class="text-danger fw-bold">50% OFF</h6>
+                            <p><del>R$ 489,52</del><span class="ms-2">R$ 125,89</span></p>
+                            <a href="erro.html" class="btn btn-dark rounded-pill px-4">Adicione ao Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container py-5" id="calabresa">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow position-relative">
+                        <div class="badge bg-danger position-absolute" style="top:10px;left:10px">20%</div>
+                        <img src="https://obahortifruti.vtexassets.com/arquivos/ids/5176894/Linguica-Calabresa-Cozida-E-Defumada-Selecao-Dia-A-Dia-Kg.png?v=638323617843230000"
+                            class="card-img-top img-fluid p-3" alt="Calabreso">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Calabreso</h5>
+                            <h6 class="text-danger fw-bold">20% OFF</h6>
+                            <p><del>R$ 349,55</del><span class="ms-2">R$ 312,98</span></p>
+                            <a href="erro.html" class="btn btn-dark rounded-pill px-4">Adicione ao Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow position-relative">
+                        <div class="badge bg-danger position-absolute" style="top:10px;left:10px">30%</div>
+                        <img src="https://ibassets.com.br/ib.item.image.large/l-823de01fff804acea9c92258b9d8ad7c.png"
+                            class="card-img-top img-fluid p-3" alt="D'guê">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">D'guê</h5>
+                            <h6 class="text-danger fw-bold">30% OFF</h6>
+                            <p><del>R$ 178,98</del><span class="ms-2">R$ 177,98</span></p>
+                            <a href="erro.html" class="btn btn-dark rounded-pill px-4">Adicione ao Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow position-relative">
+                        <div class="badge bg-danger position-absolute" style="top:10px;left:10px">50%</div>
+                        <img src="https://tempodecozimento.com.br/wp-content/uploads/2023/12/linguica.png"
+                            class="card-img-top img-fluid p-3" alt="MC Bin Laden">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">MC Bin Laden</h5>
+                            <h6 class="text-danger fw-bold">50% OFF</h6>
+                            <p><del>R$ 578,25</del><span class="ms-2">R$ 578,02</span></p>
+                            <a href="erro.html" class="btn btn-dark rounded-pill px-4">Adicione ao Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="local" class="center">
+            <div class="container-Local shadow">
+                <img class="fazerCaber"
+                    src="https://i.ibb.co/2YhGT6Qy/davi-brito-e1740483211639-removebg-preview.png" />
+                <div style="margin-left: 3vw">
+                    <h1>Almoce com o Calabreso!</h1>
+                    <br /><br /><br />
+                    <p>
+                        Venha almoçar com o Davi Brito, vulgo Calabreso! O cara que sabe
+                        que almoço bom é aquele que mistura sabor de verdade com uma
+                        pitada de zoeira. Aqui não tem tempo ruim: só comida caprichada,
+                        risada garantida e aquele clima que deixa seu dia melhor. Vem
+                        provar o Calabreso e descubra que almoçar pode ser muito mais que
+                        só comer!
+                    </p>
+                    <br />
+                    <a href="erro.html"><button class="btn btn-dark btn-lg">Conheça</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imagenzinha final -->
+        <section>
+            <div class="propaganda">
+                <img src="./assets/img/pages/cardapio/gbg.jpg" alt="imgfinal">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Sobre nós:</h5>
+                    <ul class="list-unstyled">
+                        <a href="erro.html">
+                            <li><i class="bi bi-person"></i> Quem Somos</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-tree"></i> Sustentabilidade</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-shield-lock"></i> Política de Privacidade</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-megaphone"></i> Assessoria de Imprensa</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-headset"></i> Atendimento</li>
+                        </a>
+                        <a href="erro.html">
+                            <li>
+                                <i class="bi bi-file-earmark-text"></i> Termos e Condições de
+                                Uso
+                            </li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-credit-card"></i> Cartão Presente</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-cash"></i> Regulamento CashBack</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Ajuda:</h5>
+                    <ul class="list-unstyled">
+                        <a href="erro.html">
+                            <li><i class="bi bi-chat-left-dots"></i> Fale Conosco</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-question-circle"></i> Perguntas Frequentes</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-truck"></i> Rastreie seu Pedido</li>
+                        </a>
+                        <a href="erro.html">
+                            <li>
+                                <i class="bi bi-arrow-left-right"></i> Trocas e Devoluções
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Redes sociais:</h5>
+                    <ul class="list-unstyled">
+                        <a href="erro.html">
+                            <li><i class="bi bi-instagram"></i> Instagram</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-facebook"></i> Facebook</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-youtube"></i> YouTube</li>
+                        </a>
+                        <a href="erro.html">
+                            <li><i class="bi bi-tiktok"></i> TikTok</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4" />
+
+            <p class="text-center small">
+                © 2025 Tempero do Davi. O CAFÉ COM SABOR DE CALABRESA DO BRASIL –
+                TODOS OS DIREITOS RESERVADOS. Café Fazenda Sertãozinho Ltda, CNPJ
+                07.187.796/0004-25, filial – IE 373.417.632.111, localizada na Rua
+                Pedro Dias da Rocha, 119 – Jardim Rosemary – Itapevi – SP – CEP
+                06657-220. Termos e condições de uso.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/pages/cardapio/cardapio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
