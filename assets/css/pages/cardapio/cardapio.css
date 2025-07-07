@@ -237,20 +237,3 @@ html {
   height: 100%;
   object-fit: cover;
 }
-
-/* FOOTER */
-
-footer {
-  background-color: #f1f1f1;
-  padding-bottom: 3vh;
-  padding-top: 20vh;
-}
-
-footer a {
-  color: #212529;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}

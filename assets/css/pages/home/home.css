@@ -38,7 +38,7 @@ html {
   margin-top: 30vh;
   color: #000;
   font-family: "Montserrat", sans-serif;
-  font-size: 120px;
+  font-size: 95px;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -272,7 +272,7 @@ html {
 
 /* Avaliações */
 
-.avaliacoes {
+#avaliacoes {
   text-align: center;
   padding: 2rem;
   font-family: 'Montserrat', sans-serif;
@@ -337,22 +337,4 @@ html {
 .rodape .marca {
   color: #3cb300;
   font-weight: bold;
-}
-
-
-/* FOOTER */
-
-footer {
-  background-color: #f1f1f1;
-  padding-bottom: 3vh;
-  padding-top: 5vh;
-}
-
-footer a {
-  color: #212529;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
